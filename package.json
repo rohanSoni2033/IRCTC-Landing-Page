@@ -1,0 +1,24 @@
+{
+  "name": "irctc-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for irctc website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "c:sass": "node-sass sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohanSoni2033/IRCTC-Landing-Page.git"
+  },
+  "author": "rohan soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohanSoni2033/IRCTC-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/rohanSoni2033/IRCTC-Landing-Page#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
