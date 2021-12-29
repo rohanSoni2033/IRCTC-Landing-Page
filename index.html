@@ -14,23 +14,23 @@
     <main class="main">
         <nav class="nav_container">
             <nav class="first_nav">
-                <ul>
+                <ul class="first_nav_lists">
                     <li>
-                        <button type="button" class="login">login</button>
-                        <button type="button" class="register">register</button>
+                        <button type="button" class="btn login">login</button>
+                        <button type="button" class="btn register">register</button>
                     </li>
                     <li><a href="#">agent login</a></li>
                     <li><a href="#">contact us</a></li>
                     <li><a href="#">ask disha</a></li>
-                    <li><button type="button" class="alert">alerts</button></li>
+                    <li><button type="button" class="btn alert">alerts</button></li>
                     <li class="date">26 Dec 2021</li>
                     <li class="time">02 : 59 : 59</li>
                 </ul>
             </nav>
 
             <nav class="second_nav">
-                <ul>
-                    <li><a href="#">home</a></li>
+                <ul class="second_nav_lists">
+                    <li><a href="#"><i class="fas fa-house-user"></i></a></li>
                     <li>
                         <a href="#">irctc exclusive <i class="fas fa-chevron-right"></i></a>
 
@@ -161,11 +161,13 @@
                     <li>
                         <a href="#">premium partner <i class="fas fa-chevron-right"></i></a>
                         <ul class="dropdown_menu">
-                            <li><a href="#">confirm tkt</a></li>
-                            <li><a href="#">ixigo</a></li>
-                            <li><a href="#">MakeMyTrip-Trains</a></li>
-                            <li><a href="#">EaseMyTrip</a></li>
-                            <li><a href="#">Goibibo</a></li>
+                            <li><a href="#"><img src="./img/img-1.png" alt="" class="partner_logo"> confirm tkt</a></li>
+                            <li><a href="#"><img src="./img/img-2.png" alt="" class="partner_logo"> ixigo</a></li>
+                            <li><a href="#"><img src="./img/img-3.png" alt="" class="partner_logo">
+                                    MakeMyTrip-Trains</a>
+                            </li>
+                            <li><a href="#"><img src="./img/img-4.png" alt="" class="partner_logo"> EaseMyTrip</a></li>
+                            <li><a href="#"><img src="./img/img-5.png" alt="" class="partner_logo"> Goibibo</a></li>
                         </ul>
                     </li>
                     <li>
@@ -183,6 +185,156 @@
                 </ul>
             </nav>
         </nav>
+
+        <header class="header">
+            <form action="" class="form">
+                <div class="btn_container">
+                    <button class="pnr_btn">
+                        <i class="fas fa-clipboard-check"></i> pnr status
+                    </button>
+                    <button class="chart_vacancy_btn">
+                        <i class="fas fa-clipboard-list"></i> chart/vacancy
+                    </button>
+                </div>
+
+                <h1 class="booking_form_heading">
+                    book ticket
+                </h1>
+
+                <div class="input_container">
+
+                    <div class="from_to_container">
+                        <div class="input_from inputs">
+                            <i class="fas fa-location-arrow"></i>
+                            <!-- <label for="from">from</label> -->
+                            <input type="text" name="" id="from" class="from" placeholder="from">
+                        </div>
+                        <i class='fas fa-exchange-alt'></i>
+
+                        <div class="input_to inputs">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <!-- <label for="to">to</label> -->
+                            <input type="text" name="" id="to" placeholder="to">
+                        </div>
+                    </div>
+                    <div class="date_input inputs">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="date" name="" id="">
+                    </div>
+
+                    <div class="input_classes">
+                        <button class="select_value">
+                            <i class="fas fa-suitcase-rolling"></i>
+                            <span>value</span>
+                            <i class='fas fa-chevron-down'></i>
+                        </button>
+                        <div class="options_container">
+                            <div class="all_classes option">
+                                <label for="all_classes">all classes</label>
+                                <input type="radio" name="input_classes" id="all_classes">
+                            </div>
+                            <div class="anubhuti_class option">
+                                <label for="anubhuti_class">anubhuti class(EA)</label>
+                                <input type="radio" name="input_classes" id="anubhuti_class">
+                            </div>
+
+                            <div class="ac_first_class option">
+                                <label for="ac_first_class">ac first sclass (1A)</label>
+                                <input type="radio" name="input_classes" id="ac_first_class">
+                            </div>
+                            <div class="ac_second_class option">
+                                <label for="ac_second_class">ac second class (2A)</label>
+                                <input type="radio" name="input_classes" id="ac_second_class">
+                            </div>
+                            <div class="ac_third_class option">
+                                <label for="ac_third_class">ac third class (3A)</label>
+                                <input type="radio" name="input_classes" id="ac_third_class">
+                            </div>
+                            <div class="sleeper option">
+                                <label for="sleeper">sleeper (SL)</label>
+                                <input type="radio" name="input_classes" id="sleeper">
+                            </div>
+
+                            <div class="second_sitting option">
+                                <label for="second_sitting">second sitting (2S)</label>
+                                <input type="radio" name="input_classes" id="second_sitting">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input_quota">
+
+                        <button class="select_value">
+                            <i class="fas fa-th-large"></i>
+                            <span>value</span>
+                            <i class='fas fa-chevron-down'></i>
+                        </button>
+                        <div class="options_container">
+                            <div class="general option">
+                                <label for="general">general</label>
+                                <input type="radio" name="input_quota" id="general">
+                            </div>
+                            <div class="ladies option">
+                                <label for="ladies">ladies</label>
+                                <input type="radio" name="input_quota" id="ladies">
+                            </div>
+                            <div class="tatkal option">
+                                <label for="tatkal">tatkal</label>
+                                <input type="radio" name="input_quota" id="tatkal">
+                            </div>
+                            <div class="senior_citizen option">
+                                <label for="senior_citizen">lower birth/senior citizen</label>
+                                <input type="radio" name="input_quota" id="senior_citizen">
+                            </div>
+                            <div class="premium_tatkal option">
+                                <label for="premium_tatkal">premium tatkal</label>
+                                <input type="radio" name="input_quota" id="premium_tatkal">
+                            </div>
+                            <div class="divyaang option">
+                                <label for="divyaang">divyaang</label>
+                                <input type="radio" name="input_quota" id="divyaang">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkboxes">
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="divyaang_concession">
+                            <label for="divyaang_concession">
+                                <div class="custom_checkbox">
+                                    ✅
+                                </div> divyaang concession
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="flexible_with_date">
+                            <label for="flexible_with_date">
+                                <div class="custom_checkbox">
+                                    ✅
+                                </div> flexible with date
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="available_birth">
+                            <label for="available_birth">
+                                <div class="custom_checkbox">
+                                    ✅
+                                </div> train with available birth
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="pass_consession">
+                            <label for="pass_consession">
+
+                                <div class="custom_checkbox">
+                                    ✅
+                                </div> raliway pass consession
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="submit_btn">submit</button>
+                </div>
+            </form>
+        </header>
     </main>
 </body>
 

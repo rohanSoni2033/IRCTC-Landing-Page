@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+$primary-blue: #213d77;
+$secondary-blue: #007ad9;
+$light-orange: #fb792b;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 62.5%;
+}
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
+}

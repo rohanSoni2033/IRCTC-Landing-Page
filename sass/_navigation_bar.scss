@@ -1,0 +1,135 @@
+.nav_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    list-style: none;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.first_nav,
+.second_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.second_nav {
+  background-color: #213d77;
+}
+
+.first_nav_lists {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 25px;
+
+  li {
+    color: inherit;
+    padding: 10px;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .btn {
+    border: 0;
+    font-size: inherit;
+    padding: 12px 16px;
+    background-color: #213d77;
+    color: white;
+    border-radius: 5px;
+  }
+}
+
+.second_nav_lists {
+  display: flex;
+  gap: 15px;
+
+  li {
+    display: inline-block;
+    padding: 15px;
+    color: inherit;
+    position: relative;
+    color: white;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 20px;
+      color: rgb(255, 255, 255);
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .dropdown_menu {
+      list-style: none;
+      width: 240px;
+      background-color: white;
+      color: black;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      border-top: 4px solid #213d77;
+      position: absolute;
+      top: 100%;
+      left: -50%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 5;
+
+      li {
+        color: black;
+        padding: 10px;
+        a {
+          color: black;
+        }
+
+        &:hover {
+          background-color: #007ad9;
+          color: white;
+        }
+        &:hover a {
+          color: white;
+        }
+      }
+
+      .dropdown_menu {
+        border: 0;
+        border-radius: 0 10px 10px 0;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgb(255, 255, 255);
+        border-left: 4px solid #213d77;
+        transition: height 1s ease-in-out;
+        z-index: 5;
+      }
+    }
+
+    &:hover > .dropdown_menu {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.partner_logo {
+  width: 40px;
+  height: 40px;
+}
