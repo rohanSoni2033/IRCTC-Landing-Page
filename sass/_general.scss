@@ -3,6 +3,8 @@
 $primary-blue: #213d77;
 $secondary-blue: #007ad9;
 $light-orange: #fb792b;
+$white: #fff;
+$black: #000;
 
 *,
 *::before,
@@ -17,4 +19,31 @@ html {
 body {
   font-family: 'Nunito Sans', sans-serif;
   overflow-x: hidden;
+}
+
+.btn {
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input {
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: 0;
 }

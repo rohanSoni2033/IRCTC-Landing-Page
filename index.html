@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/29c2b75804.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,136 +14,179 @@
 <body>
     <main class="main">
         <nav class="nav_container">
-            <nav class="first_nav">
-                <ul class="first_nav_lists">
+            <nav class="top_nav">
+                <div class="logo">
+                    <img src="img\indian_railway_icon.png" alt="">
+                </div>
+                <ul class="top_nav_lists">
+                    <li> <button type="button" class="btn login_btn">login</button></li>
                     <li>
-                        <button type="button" class="btn login">login</button>
-                        <button type="button" class="btn register">register</button>
+                        <a href="#">register</a>
                     </li>
                     <li><a href="#">agent login</a></li>
                     <li><a href="#">contact us</a></li>
                     <li><a href="#">ask disha</a></li>
-                    <li><button type="button" class="btn alert">alerts</button></li>
-                    <li class="date">26 Dec 2021</li>
-                    <li class="time">02 : 59 : 59</li>
+                    <li><a href="#">alerts</a></li>
                 </ul>
+
+                <div class="date_time_container">
+                    <span class="date">26 Dec 2021</span>
+                    <span class="time">02 : 59 : 59</span>
+                    <div class="logo">
+                        <img src="img\irctc_icon.png" alt="">
+                    </div>
+                </div>
+
             </nav>
 
-            <nav class="second_nav">
-                <ul class="second_nav_lists">
+            <nav class="bottom_nav">
+                <ul class="bottom_nav_lists">
                     <li><a href="#"><i class="fas fa-house-user"></i></a></li>
                     <li>
-                        <a href="#">irctc exclusive <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">irctc exclusive <span class="material-icons">
+                                navigate_next
+                            </span></a>
 
                         <ul class="dropdown_menu">
                             <li>
-                                <a href="#">irctc eWallet <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">irctc eWallet <span class="material-icons">
+                                        chevron_right
+                                    </span></a>
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a> about irctc eWallet</li>
-                                    <li><a href="#"></a>irctc eWallet user guide</li>
+                                    <li><a href="#">about irctc eWallet</a></li>
+                                    <li><a href="#">irctc eWallet user guide</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"></a>irctc iMudra</li>
-                            <li><a href="#"></a>irctc iPay</li>
-                            <li><a href="#"></a>e-gift vouchers</li>
+                            <li><a href="#">irctc iMudra</a></li>
+                            <li><a href="#">irctc iPay</a></li>
+                            <li><a href="#">e-gift vouchers</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="#">train <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">train <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </a>
 
                         <ul class="dropdown_menu">
-                            <li>Book Ticket</li>
-                            <li>Foreign Tourist Booking</li>
-                            <li>Connecting Journey Booking</li>
+                            <li><a href="#">Book Ticket</a></li>
+                            <li><a href="#">Foreign Tourist Booking</a></li>
+                            <li><a href="#">Connecting Journey Booking</a></li>
                             <li>
-                                <a href="#">IRCTC TRAINS <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">IRCTC TRAINS <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
 
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a>group booking</li>
-                                    <li><a href="#"></a>travel inssurance claim process</li>
+                                    <li><a href="#">group booking</a></li>
+                                    <li><a href="#">travel inssurance claim process</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">cancel ticket <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">cancel ticket <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
 
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a>e-tickets</li>
-                                    <li><a href="#"></a>counter ticket</li>
+                                    <li><a href="#">e-tickets</a></li>
+                                    <li><a href="#">counter ticket</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"></a>PNR enquiry</li>
-                            <li><a href="#"></a>train schedule</li>
-                            <li><a href="#"></a>track your train</li>
-                            <li><a href="#"></a>FTR coach/train booking</li>
+                            <li><a href="#">PNR enquiry</a></li>
+                            <li><a href="#">train schedule</a></li>
+                            <li><a href="#">track your train</a></li>
+                            <li><a href="#">FTR coach/train booking</a></li>
                         </ul>
                     </li>
+                    <li><a href="#">buses</a></li>
+                    <li><a href="#">flight</a></li>
+                    <li><a href="#">hotels</a></li>
 
                     <li>
-                        <a href="#">holidays <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">holidays <span class="material-icons">
+                                navigate_next
+                            </span></a>
                         <ul class="dropdown_menu">
                             <li>
-                                <a href="#">special trains <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">special trains <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
 
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a>tourist train</li>
-                                    <li><a href="#"></a>maharajas's express</li>
+                                    <li><a href="#">tourist train</a></li>
+                                    <li><a href="#">maharajas's express</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">pacages <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">pacages <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
 
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a>tour packages</li>
-                                    <li><a href="#"></a>air packages</li>
-                                    <li><a href="#"></a>international packages</li>
-                                    <li><a href="#"></a>land packages</li>
-                                    <li><a href="#"></a>cruise</li>
+                                    <li><a href="#">tour packages</a></li>
+                                    <li><a href="#">air packages</a></li>
+                                    <li><a href="#">international packages</a></li>
+                                    <li><a href="#">land packages</a></li>
+                                    <li><a href="#">cruise</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">stays <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">stays <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a>retiring room</li>
-                                    <li><a href="#"></a>lounge</li>
+                                    <li><a href="#">retiring room</a></li>
+                                    <li><a href="#">lounge</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">loyalty <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">loyalty <span class="material-icons">
+                                navigate_next
+                            </span></a>
 
                         <ul class="dropdown_menu">
                             <li><a href="#">about IRCTC SBI credit card</a></li>
-                            <li><a href="#"></a>IRCTC SBI platinum card RUPAY e-apply</li>
+                            <li><a href="#">IRCTC SBI platinum card RUPAY e-apply</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">meals <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">meals <span class="material-icons">
+                                navigate_next
+                            </span></a>
                         <ul class="dropdown_menu">
-                            <li><a href="#"></a>order food - e-catering</li>
-                            <li><a href="#"></a>book food - pantry card</li>
+                            <li><a href="#">order food - e-catering</a></li>
+                            <li><a href="#">book food - pantry card</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">promotions <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">promotions <span class="material-icons">
+                                navigate_next
+                            </span></a>
 
                         <ul class="dropdown_menu">
-                            <li><a href="#"></a>advertise with us</li>
+                            <li><a href="#">advertise with us</a></li>
                             <li>
-                                <a href="#">IRCTC rail connect app <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">IRCTC rail connect app <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
 
                                 <ul class="dropdown_menu">
-                                    <li><a href="#"></a>android mobile app</li>
-                                    <li><a href="#"></a>ios mobile app</li>
+                                    <li><a href="#">android mobile app</a></li>
+                                    <li><a href="#">ios mobile app</a></li>
                                 </ul>
 
                             </li>
                             <li><a href="#">IRCTC tourism app</a></li>
                             <li><a href="#">IRCTC air app</a></li>
                             <li><a href="#">UTS ticket app</a></li>
+
                             <li>
-                                <a href="#">IRCTC SBI credit card <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">IRCTC SBI credit card <span class="material-icons">
+                                        navigate_next
+                                    </span></a>
 
                                 <ul class="dropdown_menu">
                                     <li><a href="#">about IRCTC SBI credit card</a></li>
@@ -159,8 +203,10 @@
                     </li>
 
                     <li>
-                        <a href="#">premium partner <i class="fas fa-chevron-right"></i></a>
-                        <ul class="dropdown_menu">
+                        <a href="#">premium partner <span class="material-icons">
+                                navigate_next
+                            </span></a>
+                        <ul class="dropdown_menu premium_partner">
                             <li><a href="#"><img src="./img/img-1.png" alt="" class="partner_logo"> confirm tkt</a></li>
                             <li><a href="#"><img src="./img/img-2.png" alt="" class="partner_logo"> ixigo</a></li>
                             <li><a href="#"><img src="./img/img-3.png" alt="" class="partner_logo">
@@ -171,7 +217,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">more <i class="fas fa-chevron-right"></i></a>
+                        <a href="#">more</a>
                         <ul class="dropdown_menu">
                             <li><a href="#">chatbot as a service (CaaS)</a></li>
                             <li><a href="#">link your aadhaar</a></li>
@@ -189,11 +235,11 @@
         <header class="header">
             <form action="" class="form">
                 <div class="btn_container">
-                    <button class="pnr_btn">
+                    <button class="btn pnr_btn">
                         <i class="fas fa-clipboard-check"></i> pnr status
                     </button>
-                    <button class="chart_vacancy_btn">
-                        <i class="fas fa-clipboard-list"></i> chart/vacancy
+                    <button class="btn chart_vacancy_btn">
+                        <i class="fas fa-clipboard-list"></i> chart / vacancy
                     </button>
                 </div>
 
@@ -222,11 +268,11 @@
                         <input type="date" name="" id="">
                     </div>
 
-                    <div class="input_classes">
-                        <button class="select_value">
+                    <div class="input_classes input_select">
+                        <button class="btn select_value">
                             <i class="fas fa-suitcase-rolling"></i>
                             <span>value</span>
-                            <i class='fas fa-chevron-down'></i>
+                            <i class='fas fa-chevron-right option_arrow'></i>
                         </button>
                         <div class="options_container">
                             <div class="all_classes option">
@@ -262,12 +308,12 @@
                         </div>
 
                     </div>
-                    <div class="input_quota">
+                    <div class="input_quota input_select">
 
-                        <button class="select_value">
+                        <button class="btn select_value">
                             <i class="fas fa-th-large"></i>
                             <span>value</span>
-                            <i class='fas fa-chevron-down'></i>
+                            <i class='fas fa-chevron-right option_arrow'></i>
                         </button>
                         <div class="options_container">
                             <div class="general option">
@@ -331,11 +377,14 @@
                             </label>
                         </div>
                     </div>
-                    <button type="button" class="submit_btn">submit</button>
+                    <button type="button" class="btn submit_btn">submit</button>
                 </div>
             </form>
         </header>
     </main>
+
+
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>

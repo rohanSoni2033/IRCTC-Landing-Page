@@ -9,116 +9,83 @@
 
   a:link {
     text-decoration: none;
-    color: white;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
   }
 }
 
-.first_nav,
-.second_nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1a1a1a;
-}
+.top_nav {
+  justify-content: space-between;
+  padding: 16px 40px;
 
-.second_nav {
-  background-color: #213d77;
-}
+  .logo {
+    width: 40px;
+    height: 40px;
 
-.first_nav_lists {
-  display: flex;
-  color: white;
-  align-items: center;
-  gap: 25px;
-
-  li {
-    color: inherit;
-    padding: 10px;
-
-    a {
-      color: inherit;
+    img {
+      height: 100%;
     }
   }
+  .login_btn {
+    width: 120px;
+    padding: 12px 18px;
+    background-color: $primary-blue;
+    color: $white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
 
-  .btn {
-    border: 0;
-    font-size: inherit;
-    padding: 12px 16px;
-    background-color: #213d77;
-    color: white;
-    border-radius: 5px;
+  .date_time_container {
+    display: flex;
+    align-items: center;
+    color: $primary-blue;
+    gap: 26px;
+    font-weight: 800;
+    text-transform: capitalize;
   }
 }
 
-.second_nav_lists {
+.top_nav_lists {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 30px;
+
+  a {
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
+.bottom_nav {
+  background-color: $primary-blue;
+  justify-content: center;
+}
+
+.bottom_nav_lists {
+  display: flex;
+  align-items: center;
 
   li {
     display: inline-block;
-    padding: 15px;
     color: inherit;
     position: relative;
-    color: white;
 
     a {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding-right: 20px;
-      color: rgb(255, 255, 255);
       display: flex;
-      gap: 15px;
-      align-items: center;
-    }
+      padding: 15px;
+      gap: 4px;
+      text-transform: capitalize;
 
-    .dropdown_menu {
-      list-style: none;
-      width: 240px;
-      background-color: white;
-      color: black;
-      border-radius: 0 0 10px 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      border-top: 4px solid #213d77;
-      position: absolute;
-      top: 100%;
-      left: -50%;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      visibility: hidden;
-      opacity: 0;
-      z-index: 5;
-
-      li {
-        color: black;
-        padding: 10px;
-        a {
-          color: black;
-        }
-
-        &:hover {
-          background-color: #007ad9;
-          color: white;
-        }
-        &:hover a {
-          color: white;
-        }
-      }
-
-      .dropdown_menu {
-        border: 0;
-        border-radius: 0 10px 10px 0;
-        list-style: none;
-        position: absolute;
-        top: 0;
-        left: 100%;
-        visibility: hidden;
-        opacity: 0;
-        background-color: rgb(255, 255, 255);
-        border-left: 4px solid #213d77;
-        transition: height 1s ease-in-out;
-        z-index: 5;
+      .material-icons {
+        font-size: 16px;
       }
     }
 
@@ -126,6 +93,78 @@
       visibility: visible;
       opacity: 1;
     }
+  }
+
+  .dropdown_menu {
+    width: 240px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-top: 4px solid $primary-blue;
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+
+    li {
+      color: black;
+      display: flex;
+      justify-content: stretch;
+
+      a {
+        width: 100%;
+        color: black;
+        padding: 10px;
+        justify-content: space-between;
+        padding-right: 20px;
+        transition: padding 0.2s ease-in;
+
+        &:hover {
+          padding-right: 10px;
+          background-color: $secondary-blue;
+          color: white;
+        }
+      }
+      &:last-child a {
+        border-radius: 0 0 10px 10px;
+      }
+    }
+
+    .dropdown_menu {
+      border: 0;
+      border-radius: 0 10px 10px 0;
+      top: 0;
+      left: 100%;
+      border-left: 4px solid $primary-blue;
+
+      li {
+        a {
+          color: black;
+
+          &:hover {
+            background-color: $secondary-blue;
+            color: white;
+          }
+        }
+        &:first-child a {
+          border-radius: 0 10px 0 0;
+        }
+
+        &:last-child a {
+          border-radius: 0 0 10px 0;
+        }
+      }
+    }
+  }
+
+  .premium_partner li a {
+    justify-content: flex-start;
+    gap: 20px;
   }
 }
 

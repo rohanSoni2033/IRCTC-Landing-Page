@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 80vh;
-  background-image: url('../img/20210911_083502.jpg');
+  background-image: url('img/20210911_083502.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -27,18 +27,15 @@
     .btn_container {
       display: flex;
       gap: 20px;
+      color: white;
 
       button {
-        border: 0;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        gap: 6px;
+        align-items: center;
+        gap: 12px;
         padding: 8px;
         background-color: #007ad9;
-        color: white;
-        font-size: inherit;
-        font-family: inherit;
         border-radius: 6px;
       }
     }
@@ -77,26 +74,14 @@
 
   input {
     width: 100%;
-    // background-color: red;
     padding: 12px;
-    border: 0;
-    font-size: inherit;
-    font-family: inherit;
-  }
-  input:focus {
-    outline: 0;
   }
 }
 
-.input_classes,
-.input_quota {
+.input_select {
   position: relative;
-  // height: 100%;
-  // display: flex;
-  // align-items: stretch;
 
   button {
-    border: 0;
     border-radius: 4px;
     background-color: #007ad9;
     color: white;
@@ -107,28 +92,43 @@
     font-family: inherit;
     width: 100%;
     padding: 12px;
-    // padding: 10px;
+
+    .option_arrow {
+      transition: transform 0.5s ease-in;
+    }
   }
 
   .options_container {
     width: 100%;
-    height: 180px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     overflow-x: hidden;
     overflow-y: scroll;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 5px);
     left: 0;
+    transition: all 0.4s ease-in-out;
+    height: 0;
     visibility: hidden;
+    opacity: 0;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #eee;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondary-blue;
+    }
 
     .option {
       padding: 10px;
       display: flex;
       align-items: center;
       border-bottom: 2px solid #eee;
+      cursor: pointer;
 
       &:last-child {
         border: 0;
@@ -143,6 +143,16 @@
         color: white;
       }
     }
+  }
+
+  &.active .options_container {
+    height: 150px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.active .option_arrow {
+    transform: rotate(90deg);
   }
 }
 
